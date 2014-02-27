@@ -1,0 +1,265 @@
+---
+title       : Aging and Decision Making
+subtitle    : 
+author      : Karsten T. Hansen, Romana Khan and Vishal Singh
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [mathjax]     # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft,selfcontained}
+--- 
+
+```{r set.global.options, echo=FALSE, cache=FALSE, message=FALSE}
+knitr::opts_chunk$set(comment = NA, echo=F, results = 'asis', tidy = F, message = F)
+```
+
+```{r external.code}
+presentation.chunk.dir <- 'd:\\research\\aging\\chunks\\presentation_chunks\\'
+main.chunk.dir <- 'd:\\research\\aging\\chunks\\main_chunks\\'
+read_chunk(paste(presentation.chunk.dir,"chunks_presentation.R",sep=""))
+read_chunk(paste(main.chunk.dir,"mcmc_chunks.R",sep=""))
+```
+
+```{r set.options}
+lupdate_pl_run <- FALSE
+lupdate_cr_run <- FALSE
+lupdate_np_run <- FALSE
+```
+
+```{r load.additional.data}
+module.info <- read.csv('E:\\data\\variety\\all_module_vars.csv')
+group.info <- read.csv('E:\\data\\aging\\Group_atributes.csv')
+```
+
+```{r load.libraries.pres}
+```
+
+```{r functions.for.presentation}
+```
+
+```{r set.axis.labels}
+```
+
+
+## Why Study Aging?
+
+### - We all age!
+### - Global population is getting older - many policy implications
+### - Many important decisions made by relatively older (politicians, CEOs etc.)
+### - Many elderly faced with important choices late in life (Health care, prescriptions drugs, late-in-life care etc.)
+<br/>
+
+### => A heightened interest in understanding age-related consequences for cognition, emotion, and decision making
+
+---
+
+## Aging and Decision Making 
+
+### Lab Evidence 
+
+
+<div style='text-align: right;'>
+    <img height='500' src='decision_old.jpg' /> 
+</div>
+
+
+---
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+## "Will these differences manifest in a mundane activity of real life?"
+
+--- 
+
+## Aging and Decision Making: Behavioral Measures
+
+### <font color="red">Concentration Ratio:</font> 
+What percentage of total expenditure in a category is on top choice? A measure of habituation, no desire for variety. 
+
+### <font color="red">Private Label Use:</font> 
+Use of "generic products" may be perceived as more risky. Particularly in OTC Medicine - industry reports and academic research suggests consumers view generics as lower quality and more risky than branded alternatives (Adweek 2009, Erdem et.al.2004)
+
+### <font color="red">New Product Trial:</font> 
+A measure of desire for novelty, new experiences
+
+
+---
+## Data: ACNielsen HOMESCAN panel 
+
+- <font color="red"> Concentration Ratio </font> 
+    - <font size="3"> We use all available product groups (except very small ones) - 92 in total</font>
+    - <font size="3"> Dependent measure = Observed concentration measure at brand level</font>
+- <font color="red"> Private Label Use </font>
+    - <font size="3"> All product groups with non-neglible PL share (72 in total)</font>
+    - <font size="3"> Dependent measure = Fraction of expenditure on PL purchases in product group</font>
+- <font color="red"> New Product Trial </font>
+    - <font size="3"> All product groups with non-neglible new product introduction (40 in total)</font>
+    - <font size="3"> Dependent measure = Fraction of NP purchases out of all purchases in product group </font>
+
+<div style="line-height:75%"> 
+<font size="2"> Note: Product groups that appeal only to one age segment (e.g., Baby Food, Diapers) or to one gender (e.g., Feminine Hygiene, Cosmetics) are dropped from the analysis.</font>
+</div>
+
+
+
+--- 
+## Model 
+<br/>
+<br/>
+<br/>
+
+$$
+y_i = \text{Intercept} + \text{Usage level} + \text{Years in panel} + \\
+\text{Male} + \text{Female} + \text{Income} + \text{Age} + \text{Education} +  \\
+\text{Age} \, \text{x} \, \text{Male} + \text{Age} \, \text{x} \, \text{Female} + \\
+\text{Age} \, \text{x} \, \text{Education} + \\
+\varepsilon_i
+$$
+
+---
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+## Choice Concentration
+
+---
+## Age Effects by Household Composition
+
+```{r plot.cr1}
+```
+
+```{r plot.cr1.1,fig.keep='none', cache=F, fig.align='center'}
+export.ggplot.to.presentation(10,5,plot.range.hh.comp)
+```
+
+
+---
+## Male vs. Female Age Effects
+
+```{r plot.cr1.1a,fig.keep='none', cache=F, fig.align='center'}
+export.ggplot.to.presentation(9.5,4.5,plot.range.gender)
+```
+
+<div style="line-height:75%"> 
+<font size="2"> Note: Plot shows the difference in normalized effect size between the age effect for males and females. On average the male age effect is `r as.numeric(format(100*mean(b.stats.gender$Mean.N),digits=3))` percentage points bigger than the female effect.</font>
+</div>
+
+
+---
+## Age Effects by Education
+
+```{r plot.cr1.2,fig.keep='none', cache=F, fig.align='center'}
+export.ggplot.to.presentation(10,5,plot.range.edu)
+```
+
+---
+
+## Average Predicted Levels
+
+```{r plot.cr1.3,fig.keep='none', cache=F, fig.align='center'}
+export.ggplot.to.presentation(10,5,avg.cr.plot)
+```
+
+---
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+## Private Label
+
+---
+
+## Age Effects by Household Composition
+
+```{r plot.pl}
+```
+
+```{r plot.pl.1,fig.keep='none', cache=F, fig.align='center'}
+export.ggplot.to.presentation(10,5,plot.range.hh.comp)
+```
+
+---
+
+## Age Effects by Education
+
+```{r plot.pl.2,fig.keep='none', cache=F, fig.align='center'}
+export.ggplot.to.presentation(10,5,plot.range.edu)
+```
+
+---
+
+## Gender Effects by Age, 72 Product Groups
+
+```{r plot.pl.3,fig.keep='none', cache=F, fig.align='center'}
+export.1by2.ggplot.to.presentation(10,5,plot.gender.all.modules2,plot.gender.all.modules3)
+```
+
+---
+
+## Average Predicted Levels
+
+```{r plot.pl.4,fig.keep='none', cache=F, fig.align='center'}
+export.ggplot.to.presentation(10,5,avg.pl.plot)
+```
+
+
+---
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+## New Product Introduction
+
+---
+
+## Age Effects by Household Composition
+
+```{r plot.np}
+```
+
+```{r plot.np.1,fig.keep='none', cache=F, fig.align='center'}
+export.ggplot.to.presentation(10,5,plot.range.hh.comp)
+```
+
+---
+
+## Age Effects by Education
+
+```{r plot.np.2,fig.keep='none', cache=F, fig.align='center'}
+export.ggplot.to.presentation(10,5,plot.range.edu)
+```
+
+
+---
+
+## Gender Effects by Age, 40 Product Groups
+
+```{r plot.np.3,fig.keep='none', cache=F, fig.align='center'}
+export.1by2.ggplot.to.presentation(10,5,plot.gender.all.modules2,plot.gender.all.modules3)
+```
+
+
+
+
+---
+
+## Average Predicted Levels
+
+```{r plot.np.4,fig.keep='none', cache=F, fig.align='center'}
+export.ggplot.to.presentation(10,5,avg.np.plot)
+```
+
+
+
+
