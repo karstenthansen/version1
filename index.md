@@ -7,7 +7,7 @@ framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : [mathjax]     # {mathjax, quiz, bootstrap}
-mode        : selfcontained # {standalone, draft,selfcontained}
+mode        : standalone  # {standalone, draft,selfcontained}
 --- 
 
 
@@ -127,7 +127,7 @@ $$
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="960px" height="480px" viewBox="0 0 960 480" version="1.1">
   <metadata xmlns:gridsvg="http://www.stat.auckland.ac.nz/~paul/R/gridSVG/">
-    <gridsvg:generator name="gridSVG" version="1.3-1" time="2014-02-27 11:22:36"/>
+    <gridsvg:generator name="gridSVG" version="1.3-1" time="2014-02-27 11:57:41"/>
     <gridsvg:argument name="name" value="erase_me.svg"/>
     <gridsvg:argument name="exportCoords" value="none"/>
     <gridsvg:argument name="exportMappings" value="none"/>
@@ -1095,7 +1095,7 @@ $$
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="912px" height="432px" viewBox="0 0 912 432" version="1.1">
   <metadata xmlns:gridsvg="http://www.stat.auckland.ac.nz/~paul/R/gridSVG/">
-    <gridsvg:generator name="gridSVG" version="1.3-1" time="2014-02-27 11:22:40"/>
+    <gridsvg:generator name="gridSVG" version="1.3-1" time="2014-02-27 11:57:45"/>
     <gridsvg:argument name="name" value="erase_me.svg"/>
     <gridsvg:argument name="exportCoords" value="none"/>
     <gridsvg:argument name="exportMappings" value="none"/>
@@ -1495,7 +1495,7 @@ $$
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="960px" height="480px" viewBox="0 0 960 480" version="1.1">
   <metadata xmlns:gridsvg="http://www.stat.auckland.ac.nz/~paul/R/gridSVG/">
-    <gridsvg:generator name="gridSVG" version="1.3-1" time="2014-02-27 11:22:44"/>
+    <gridsvg:generator name="gridSVG" version="1.3-1" time="2014-02-27 11:57:49"/>
     <gridsvg:argument name="name" value="erase_me.svg"/>
     <gridsvg:argument name="exportCoords" value="none"/>
     <gridsvg:argument name="exportMappings" value="none"/>
@@ -2179,7 +2179,7 @@ $$
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="960px" height="480px" viewBox="0 0 960 480" version="1.1">
   <metadata xmlns:gridsvg="http://www.stat.auckland.ac.nz/~paul/R/gridSVG/">
-    <gridsvg:generator name="gridSVG" version="1.3-1" time="2014-02-27 11:22:47"/>
+    <gridsvg:generator name="gridSVG" version="1.3-1" time="2014-02-27 11:57:52"/>
     <gridsvg:argument name="name" value="erase_me.svg"/>
     <gridsvg:argument name="exportCoords" value="none"/>
     <gridsvg:argument name="exportMappings" value="none"/>
@@ -2642,7 +2642,7 @@ $$
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="960px" height="480px" viewBox="0 0 960 480" version="1.1">
   <metadata xmlns:gridsvg="http://www.stat.auckland.ac.nz/~paul/R/gridSVG/">
-    <gridsvg:generator name="gridSVG" version="1.3-1" time="2014-02-27 11:23:21"/>
+    <gridsvg:generator name="gridSVG" version="1.3-1" time="2014-02-27 11:58:26"/>
     <gridsvg:argument name="name" value="erase_me.svg"/>
     <gridsvg:argument name="exportCoords" value="none"/>
     <gridsvg:argument name="exportMappings" value="none"/>
@@ -3613,7 +3613,7 @@ $$
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="960px" height="480px" viewBox="0 0 960 480" version="1.1">
   <metadata xmlns:gridsvg="http://www.stat.auckland.ac.nz/~paul/R/gridSVG/">
-    <gridsvg:generator name="gridSVG" version="1.3-1" time="2014-02-27 11:23:26"/>
+    <gridsvg:generator name="gridSVG" version="1.3-1" time="2014-02-27 11:58:31"/>
     <gridsvg:argument name="name" value="erase_me.svg"/>
     <gridsvg:argument name="exportCoords" value="none"/>
     <gridsvg:argument name="exportMappings" value="none"/>
@@ -4337,7 +4337,7 @@ $$
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="960px" height="480px" viewBox="0 0 960 480" version="1.1">
   <metadata xmlns:gridsvg="http://www.stat.auckland.ac.nz/~paul/R/gridSVG/">
-    <gridsvg:generator name="gridSVG" version="1.3-1" time="2014-02-27 11:23:31"/>
+    <gridsvg:generator name="gridSVG" version="1.3-1" time="2014-02-27 11:58:36"/>
     <gridsvg:argument name="name" value="erase_me.svg"/>
     <gridsvg:argument name="exportCoords" value="none"/>
     <gridsvg:argument name="exportMappings" value="none"/>
@@ -5112,7 +5112,7 @@ $$
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="960px" height="480px" viewBox="0 0 960 480" version="1.1">
   <metadata xmlns:gridsvg="http://www.stat.auckland.ac.nz/~paul/R/gridSVG/">
-    <gridsvg:generator name="gridSVG" version="1.3-1" time="2014-02-27 11:23:35"/>
+    <gridsvg:generator name="gridSVG" version="1.3-1" time="2014-02-27 11:58:40"/>
     <gridsvg:argument name="name" value="erase_me.svg"/>
     <gridsvg:argument name="exportCoords" value="none"/>
     <gridsvg:argument name="exportMappings" value="none"/>
@@ -5830,7 +5830,7 @@ $$
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="960px" height="480px" viewBox="0 0 960 480" version="1.1">
   <metadata xmlns:gridsvg="http://www.stat.auckland.ac.nz/~paul/R/gridSVG/">
-    <gridsvg:generator name="gridSVG" version="1.3-1" time="2014-02-27 11:23:53"/>
+    <gridsvg:generator name="gridSVG" version="1.3-1" time="2014-02-27 11:58:57"/>
     <gridsvg:argument name="name" value="erase_me.svg"/>
     <gridsvg:argument name="exportCoords" value="none"/>
     <gridsvg:argument name="exportMappings" value="none"/>
@@ -6565,7 +6565,7 @@ $$
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="960px" height="480px" viewBox="0 0 960 480" version="1.1">
   <metadata xmlns:gridsvg="http://www.stat.auckland.ac.nz/~paul/R/gridSVG/">
-    <gridsvg:generator name="gridSVG" version="1.3-1" time="2014-02-27 11:23:56"/>
+    <gridsvg:generator name="gridSVG" version="1.3-1" time="2014-02-27 11:59:01"/>
     <gridsvg:argument name="name" value="erase_me.svg"/>
     <gridsvg:argument name="exportCoords" value="none"/>
     <gridsvg:argument name="exportMappings" value="none"/>
@@ -7046,7 +7046,7 @@ $$
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="960px" height="480px" viewBox="0 0 960 480" version="1.1">
   <metadata xmlns:gridsvg="http://www.stat.auckland.ac.nz/~paul/R/gridSVG/">
-    <gridsvg:generator name="gridSVG" version="1.3-1" time="2014-02-27 11:23:59"/>
+    <gridsvg:generator name="gridSVG" version="1.3-1" time="2014-02-27 11:59:04"/>
     <gridsvg:argument name="name" value="erase_me.svg"/>
     <gridsvg:argument name="exportCoords" value="none"/>
     <gridsvg:argument name="exportMappings" value="none"/>
@@ -7637,7 +7637,7 @@ $$
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="960px" height="480px" viewBox="0 0 960 480" version="1.1">
   <metadata xmlns:gridsvg="http://www.stat.auckland.ac.nz/~paul/R/gridSVG/">
-    <gridsvg:generator name="gridSVG" version="1.3-1" time="2014-02-27 11:24:02"/>
+    <gridsvg:generator name="gridSVG" version="1.3-1" time="2014-02-27 11:59:07"/>
     <gridsvg:argument name="name" value="erase_me.svg"/>
     <gridsvg:argument name="exportCoords" value="none"/>
     <gridsvg:argument name="exportMappings" value="none"/>
